@@ -1,0 +1,9 @@
+axiom: F+F+F+F
+angle:
+  increment: 90
+  initial: 90
+step: 10 
+iterations: 5
+rules:
+  F: FF+F-F+F+FF
+

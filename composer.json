@@ -1,0 +1,8 @@
+{
+    "require": {
+        "symfony/yaml": "^5.1"
+    },
+    "autoload": {
+        "psr-4": { "": "src/" }
+    }
+}

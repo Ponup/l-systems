@@ -1,0 +1,10 @@
+axiom: X
+angle:
+  increment: 22.5
+  initial: 90
+step: 10 
+iterations: 5
+rules:
+  F: FF
+  X: F-[[X]+X]+F[+FX]-X
+
