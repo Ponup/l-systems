@@ -13,7 +13,7 @@ class Turtle {
 		$this->facing = deg2rad($initialAngle);
 	}
 
-	public function moveTo($x, $y): void {
+	public function moveTo(int $x, int $y): void {
 		$this->x = $x;
 		$this->y = $y;
 	}

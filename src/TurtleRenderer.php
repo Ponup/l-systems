@@ -10,7 +10,7 @@ class TurtleRenderer {
 		$this->stack = [];
 	}
 
-	public function drawLine($im, $color, Turtle &$turtle): array {
+	public function drawLine($im, $color, Turtle $turtle): array {
 		$newX = $turtle->x + intval($turtle->step * cos($turtle->facing));	
 		$newY = $turtle->y - intval($turtle->step * sin($turtle->facing));	
 		imageline($im, $turtle->x, $turtle->y, $newX, $newY, $color);
