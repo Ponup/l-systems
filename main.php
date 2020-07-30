@@ -4,6 +4,11 @@ require 'vendor/autoload.php';
 
 use Symfony\Component\Yaml\Yaml;
 
+if($argc != 2) {
+	fprintf(STDERR, "usage: %s <definition file>\n", $argv[0]);
+	exit(1);
+}
+
 $filename = $argv[1];
 $config = Yaml::parseFile($filename, Yaml::PARSE_OBJECT_FOR_MAP);
 
