@@ -46,6 +46,9 @@ class TurtleRenderer {
 			case '-':
 				$this->turtle->turnLeft();
 				break;
+			case '|':
+				$this->turtle->reverseDirection();
+				break;
 			}	
 		}
 	}

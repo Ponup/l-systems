@@ -25,6 +25,11 @@ class Turtle {
 	public function turnRight(): void {
 		$this->facing -= $this->radiansIncrement;
 	}
+
+	// This is equivalent to turning by 180 degrees
+	public function reverseDirection(): void {
+		$this->facing += M_PI;
+	}
 }
 
 

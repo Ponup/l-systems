@@ -20,6 +20,8 @@ $ open tree.png # Or open using any picture viewer
 
 ## Examples
 
+![pentaplexity.png](pentaplexity.png)
+
 ![crystal.png](crystal.png)
 
 ![labyrinth.png](labyrinth.png)

@@ -1,0 +1,10 @@
+# Author: Paul Bourke
+axiom: F++F++F++F++F
+angle:
+  increment: 36
+  initial: 36
+step: 10 
+iterations: 4
+rules:
+  F: F++F++F|F-F++F
+
