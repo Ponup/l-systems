@@ -28,12 +28,10 @@ $renderer->render($outputSequence, $im, $black);
 
 $croppedImage = imagecropauto($im, IMG_CROP_SIDES);
 imagedestroy($im);
-$x = imagesx($croppedImage);
-$y = imagesy($croppedImage);
-$paddedImage = imagecreate($x + 10, $y + 10);
-$white = imagecolorallocate($paddedImage, 255, 255, 255);
-imagecopyresized($paddedImage, $croppedImage, 5, 5, 0, 0, $x, $y, $x, $y);
-imagedestroy($croppedImage);
+
+$imagePadder = new ImagePadder;
+$paddedImage = $imagePadder->addPadding($croppedImage, 10);
+
 imagepng($paddedImage, basename($filename, '.yaml') . '.png');
 imagedestroy($paddedImage);
 
