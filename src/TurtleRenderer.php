@@ -31,6 +31,12 @@ class TurtleRenderer {
 			$code = $sequence[$i];
 			switch($code) {
 			case 'F':
+			case 'G':
+			case 'X':
+			case 'Y':
+			case 'V':
+			case 'W':
+			case 'Z':
 				$newPosition = $this->drawLine($im, $color, $this->turtle);
 				$this->turtle->moveTo(...$newPosition);
 				break;
@@ -49,6 +55,8 @@ class TurtleRenderer {
 			case '|':
 				$this->turtle->reverseDirection();
 				break;
+			default:
+				trigger_error('Unknown symbol: ' . $code, E_USER_WARNING);
 			}	
 		}
 	}

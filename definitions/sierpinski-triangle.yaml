@@ -1,0 +1,10 @@
+axiom: F-G-G
+angle:
+  increment: 120
+  initial: 0
+step: 10
+iterations: 6
+rules:
+  F: "F-G+F+G-F"
+  G: GG
+
