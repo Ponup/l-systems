@@ -2,10 +2,7 @@
 
 class Lsystem {
 
-	private $config;
-
-	public function __construct(stdclass $config) {
-		$this->config = $config;
+	public function __construct(private stdclass $config) {
 	}
 
 	public function run(): string {

@@ -1,4 +1,3 @@
-
 # PHP L-systems
 
 Basic Lindenmayer system generation and rendering classes.
@@ -7,15 +6,15 @@ Example l-systems taken from http://paulbourke.net/fractals/lsys/ and other webs
 
 ## Requirements
 
-- PHP +7.4
+- PHP +8.3
 - Composer
 
 ## Usage
 
-```sh
-$ composer install
-$ php main.php definitions/tree.yaml
-$ open tree.png # Or open using any picture viewer
+```shell
+composer install
+php main.php definitions/tree.yaml
+open tree.png # Or open using any picture viewer
 ```
 
 ## Examples
@@ -33,4 +32,3 @@ $ open tree.png # Or open using any picture viewer
 ![tree.png](tree.png)
 
 ![von-kock-snowflake.png](von-kock-snowflake.png)
-

@@ -1,0 +1,9 @@
+axiom: FX
+angle:
+  increment: 90
+  initial: 90
+step: 5
+iterations: 12
+rules:
+  X: X+YF+
+  Y: -FX-Y

@@ -1,8 +1,12 @@
-<?php declare(strict_types=1);
+<?php
 
-class ImagePadder {
+declare(strict_types=1);
 
-	public function addPadding($inputImage, int $padding) {
+class ImagePadder
+{
+
+	public function addPadding(GdImage $inputImage, int $padding): GdImage
+	{
 		$x = imagesx($inputImage);
 		$y = imagesy($inputImage);
 		$paddedImage = imagecreate($x + ($padding << 1), $y + ($padding << 1));

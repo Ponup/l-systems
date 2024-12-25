@@ -2,10 +2,10 @@
 
 class Turtle {
 
-	public $x, $y;
-	public $step;
-	public $radiansIncrement;
-	public $facing;
+	public int $x, $y;
+	public int $step;
+	public float $radiansIncrement;
+	public float $facing;
 
 	public function __construct(int $step, float $angleIncrement, int $initialAngle) {
 		$this->step = $step;

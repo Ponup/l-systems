@@ -1,5 +1,7 @@
 {
     "require": {
+        "php": "^8.3",
+        "ext-gd": "*",
         "symfony/yaml": "^5.1"
     },
     "autoload": {

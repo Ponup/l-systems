@@ -2,15 +2,15 @@
 
 class TurtleRenderer {
 
-	private $turtle;
-	private $stack;
+	private Turtle $turtle;
+	private array $stack;
 
 	public function __construct(Turtle $turtle) {
 		$this->turtle = $turtle;
 		$this->stack = [];
 	}
 
-	public function drawLine($im, $color, Turtle $turtle): array {
+	public function drawLine(GdImage $im, int $color, Turtle $turtle): array {
 		$newX = $turtle->x + intval($turtle->step * cos($turtle->facing));	
 		$newY = $turtle->y - intval($turtle->step * sin($turtle->facing));	
 		imageline($im, $turtle->x, $turtle->y, $newX, $newY, $color);
@@ -25,7 +25,7 @@ class TurtleRenderer {
 		$this->turtle = array_pop($this->stack);	
 	}
 
-	public function render(string $sequence, $im, $color): void {
+	public function render(string $sequence, GdImage $im, int $color): void {
 		$len = strlen($sequence);
 		for($i = 0; $i < $len; $i++) {
 			$code = $sequence[$i];
